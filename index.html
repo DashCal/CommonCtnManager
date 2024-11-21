@@ -20,7 +20,16 @@
     <div class="loginContainer">
         <div class="loginHeader">
             <img class="logo" loading="eager" src="https://cm.localwu.top/Branding/Icon/icon.svg">
-            <h1 id="SystemName">登录</h1>
+            <h1 id="SystemName">...</h1>
+            <!-- <div class="marqueeContainer">
+                <div class="marqueeContent">
+                    <h1 id="SystemName">...</h1>
+                </div>
+                <div class="marqueeCover">
+                    <div class="marqueeBefore"></div>
+                    <div class="marqueeAfter"></div>
+                </div>
+            </div> -->
         </div>
         <div class="loginBody">
             <form id="loginForm">
@@ -31,11 +40,17 @@
                 <div class="formGroup">
                     <input type="password" id="Password" name="password" placeholder="Password" required="">
                 </div>
-                <button type="submit">Sign In</button>
+                <div class="formGroup authenToken">
+                    <input type="text" id="AuthenToken" name="authenToken" placeholder="Authentificatin Token"
+                        required="">
+                    <button>Get Code</button>
+                </div>
+                <button type="submit">Login</button>
             </form>
             <div class="errorMessage" id="ErrorMessage"></div>
         </div>
         <div class="loginFooter">
+            <p id="FootLinks" class="footLinks"><a href="/">Forget Password</a> | <a href="/">Go To Root Site</a></p>
             <p id="Copyright">...</p>
         </div>
     </div>
