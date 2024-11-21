@@ -24,12 +24,12 @@ html {
     transform: translate(-50%, -50%);
     width: 120%;
     height: 120%;
-    overflow: hidden;
     /* background: #ffffff; */
     /* background: linear-gradient(60deg, #606a8466, #a3a3c166, #24245b66); */
-    background-size: 400% 400%;
-    animation: gradient 25s ease infinite;
+    /* animation: gradient 25s ease infinite; */
+    /* background-size: 400% 400%; */
     filter: blur(20px);
+    overflow: hidden;
 }
 
 @keyframes gradient {
@@ -47,13 +47,27 @@ html {
 }
 
 .banner {
-    height: 500px;
+    height: 60vh;
     width: 100vw;
-    min-width: 1200px;
+    /* min-width: 1200px; */
     overflow: hidden;
+    background: -webkit-linear-gradient(top, #000000 0%, #104CBC 20%, #ffffff 80%);
+    background: linear-gradient(180deg, #000000 0%, #104CBC 20%, #ffffff 80%);
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.banner .wordmark {
+    max-width: 80vw;
+    max-height: 80vw;
+    filter: blur(3px);
 }
 
 .loginContainer {
@@ -61,7 +75,7 @@ html {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #ffffffdd;
+    background-color: #ffffff66;
     /* background: linear-gradient(0deg, rgba(0, 0, 0, .05), rgba(0, 0, 0, .06)); */
     backdrop-filter: blur(60px);
     border: 1.6px solid #eaeaea;
@@ -73,8 +87,8 @@ html {
 }
 
 .loginContainer::before {
-    background: -webkit-linear-gradient(left, #6592AA 55%, #104CBC 83%, #000000 100%);
-    background: linear-gradient(90deg, #6592AA 55%, #104CBC 83%, #000000 100%);
+    background: -webkit-linear-gradient(left, #6592AA 60%, #104CBC 80%, #000000 100%);
+    background: linear-gradient(90deg, #6592AA 60%, #104CBC 80%, #000000 100%);
     border-radius: 0 0 12px 12px;
     bottom: 0;
     content: "";
