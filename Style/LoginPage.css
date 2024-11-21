@@ -47,12 +47,12 @@ html {
 }
 
 .banner {
-    height: 60vh;
+    height: 100vh;
     width: 100vw;
     /* min-width: 1200px; */
     overflow: hidden;
-    background: -webkit-linear-gradient(top, #000000 0%, #104CBC 20%, #ffffff 80%);
-    background: linear-gradient(180deg, #000000 0%, #104CBC 20%, #ffffff 80%);
+    background: -webkit-linear-gradient(top, #000000 0%, #104CBC 20%, #ffffff 46%);
+    background: linear-gradient(180deg, #000000 0%, #104CBC 20%, #ffffff 46%);
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -123,7 +123,61 @@ html {
 .loginHeader h1 {
     margin: 0;
     font-size: 24px;
-    font-weight: lighter;
+    font-weight: 400;
+}
+
+.marqueeContainer {
+    width: 216px;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.marqueeContent {
+    display: inline-block;
+    animation: marquee 5s linear infinite;
+}
+
+.marqueeCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    mix-blend-mode: multiply;
+}
+
+.marqueeBefore {
+    height: 100%;
+    width: 30px;
+    background: -webkit-linear-gradient(left, #ffffff 0%, #ffffff88 30%, #ffffff00 100%);
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff88 30%, #ffffff00 100%);
+
+}
+
+.marqueeAfter {
+    height: 100%;
+    width: 20px;
+    background: -webkit-linear-gradient(right, #ffffff 0%, #ffffff88 30%, #ffffff00 100%);
+    background: linear-gradient(270deg, #ffffff 0%, #ffffff88 30%, #ffffff00 100%);
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(80%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .formGroup {
@@ -139,6 +193,7 @@ html {
 .formGroup input {
     background: #ffffff66;
     width: 100%;
+    height: 2.6em;
     padding: 8px;
     box-sizing: border-box;
     border: 1px solid #ccc;
@@ -160,6 +215,34 @@ button:hover {
     background-color: #0A337A;
 }
 
+.authenToken {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.authenToken input {}
+
+.authenToken button {
+    margin-left: 12px;
+    max-width: fit-content;
+    max-height: 2.6em;
+    padding: 8px;
+    background-color: #104CBC;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.authenToken button:hover {
+    background-color: #0A337A;
+}
+
 .errorMessage {
     color: #c90606;
     margin-top: 10px;
@@ -171,4 +254,8 @@ button:hover {
     margin-top: 20px;
     font-size: 12px;
     color: #666666;
+}
+
+.footLinks a {
+    color: inherit;
 }
