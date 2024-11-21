@@ -9,6 +9,7 @@ html {
     flex-direction: column;
     box-sizing: border-box;
     font-family: Inter, 'Noto Sans', Arial, sans-serif;
+    letter-spacing: -.01em;
     user-select: none;
     -webkit-user-drag: none;
     align-content: center;
