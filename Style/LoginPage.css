@@ -132,7 +132,7 @@ html {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #0078d7;
+    background-color: #104CBC;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -141,7 +141,7 @@ button {
 }
 
 button:hover {
-    background-color: #005a9e;
+    background-color: #000000;
 }
 
 .errorMessage {
