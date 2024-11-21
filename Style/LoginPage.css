@@ -14,6 +14,7 @@ html {
     -webkit-user-drag: none;
     align-content: center;
     flex-wrap: wrap;
+    transition: 0.168s ease;
 }
 
 .background {
@@ -23,6 +24,7 @@ html {
     transform: translate(-50%, -50%);
     width: 120%;
     height: 120%;
+    overflow: hidden;
     /* background: #ffffff; */
     /* background: linear-gradient(60deg, #606a8466, #a3a3c166, #24245b66); */
     background-size: 400% 400%;
