@@ -1,9 +1,9 @@
-document.title = "Login | 登录 - LocalWu Content Manager"
+document.title = "Sign In | 登录 - LocalWu Content Manager"
 
 let Copyright = document.getElementById('Copyright');
 Copyright.textContent = 'Copyright © LocalWu. Passion Drives.';
 let SystemName = document.getElementById('SystemName');
-SystemName.textContent = '登录';
+SystemName.textContent = 'Sign In | 登录';
 
 document.getElementById('loginForm').addEventListener('submit', function (event) {
     event.preventDefault();
